@@ -1,0 +1,68 @@
+@use "variables";
+
+.button {
+  cursor: pointer;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 22.4px; /* 140% */
+  align-items: center;
+  text-align: center;
+  border: none;
+  padding: 16px 80px;
+}
+.default {
+  background: variables.$primary;
+
+  &:hover {
+    background-color: variables.$gray1;
+  }
+
+  &:active {
+    background-color: variables.$gray2;
+  }
+}
+
+.disabled {
+  background-color: variables.$gray4;
+}
+
+.children {
+  padding: 0 5px;
+}
+
+.outline {
+  border: 2px solid variables.$primary;
+  background: none;
+}
+
+.text {
+  background: none;
+}
+
+.primary {
+  display: inline-flex;
+  padding: 16px 80px;
+  background: variables.$primary;
+}
+
+.secondary {
+  display: inline-flex;
+  padding: 16px 80px;
+  background: variables.$secondary;
+}
+
+.sm {
+  padding: 14px 60px;
+}
+.md {
+  padding: 18px 90px;
+}
+.lg {
+  padding: 20px 100px;
+}
+.fw {
+  padding: 16px 103px;
+}

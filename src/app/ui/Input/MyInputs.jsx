@@ -1,0 +1,106 @@
+import React from "react";
+import Input from "./Input";
+import inputCss from './inputCss.module.css'
+
+export default function MyInputs() {
+  return (
+    <div>
+      <Input
+        label="Label"
+        type="text"
+        placeholder="placeholder"
+        name="label"
+        variant={inputCss.defaultInput}
+      />
+      <Input
+        label="Label"
+        type="text"
+        placeholder="placeholder"
+        name="label"
+        variant={inputCss.defaultInput}
+        error={inputCss.error}
+      />
+      <Input
+        label="Label"
+        type="text"
+        placeholder="placeholder"
+        name="label"
+        disabled
+      />
+      <Input
+        label="Label"
+        type="text"
+        placeholder="placeholder"
+        name="label"
+        variant={inputCss.defaultInput}
+        someText="some interesting text"
+      />
+      <Input
+        label="Label"
+        type="text"
+        placeholder="placeholder"
+        name="label"
+        variant={inputCss.defaultInput}
+        error={inputCss.error}
+        someText="some interesting text"
+      />
+      <Input
+        label="Label"
+        type="text"
+        placeholder="placeholder"
+        name="label"
+        variant={inputCss.defaultInput}
+        startIcon="/images/search.png"
+      />
+      <Input
+        label="Label"
+        type="text"
+        placeholder="placeholder"
+        name="label"
+        variant={inputCss.defaultInput}
+        endIcon="/images/search.png"
+      />
+      <Input
+        label="Label"
+        type="text"
+        placeholder="placeholder"
+        name="label"
+        variant={inputCss.defaultInput}
+        value="text"
+      />
+      <Input
+        label="Label"
+        type="text"
+        placeholder="placeholder"
+        name="label"
+        variant={inputCss.defaultInput}
+        size={inputCss.smInput}
+      />
+      <Input
+        label="Label"
+        type="text"
+        placeholder="placeholder"
+        name="label"
+        variant={inputCss.defaultInput}
+        size={inputCss.mdInput}
+      />
+      <Input
+        label="Label"
+        type="text"
+        placeholder="placeholder"
+        name="label"
+        variant={inputCss.defaultInput}
+        size={inputCss.fullWidth}
+      />
+      <Input
+        label="Label"
+        type="text"
+        placeholder="placeholder"
+        name="label"
+        variant={inputCss.defaultInput}
+        multiline
+        row="4"
+      />
+    </div>
+  );
+}
